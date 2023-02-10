@@ -1,0 +1,33 @@
+
+.P{
+   /* background-color: blue; */
+    height: 600px;
+    width: 900px;
+}
+.child{
+    height: 100px;
+    width: 100px;
+}
+/* div,p{
+    background-color: aqua;
+} */
+
+/* div p{
+    background-color: blueviolet;
+} */
+
+/* div+p{
+    background-color: yellowgreen;
+    font-size: 50px;
+} */
+
+/* p::first-letter{
+    background-color: blue;
+} */
+
+/* p::first-line{
+    background-color: brown;
+} */
+p::selection{
+    background-color: blueviolet;
+}
