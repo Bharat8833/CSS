@@ -1,0 +1,36 @@
+.b{
+    color: transparent;
+    transform: translateY(20px);
+    text-shadow:    0px 0px 10px rgb(30, 23, 211); 
+    background-image: url(image/pexels-anjana-c-674010.jpg);
+    background-size: contain;
+    
+    -webkit-background-clip: text;
+    
+}
+
+.b::before{
+    background-image:url(image/pexels-anjana-c-674010.jpg);
+  background-size: contain;
+   content: "";
+   display: inline-block;
+    height: 80px;
+    width: 80px;
+    box-shadow: 0px 0px 50px rgb(22, 47, 234);
+    border-radius: 100px;
+    transform: translateY(25px);
+   clip-path:  polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+     
+   
+}   
+.b::after{
+    background-image:url(image/pexels-anjana-c-674010.jpg);
+  background-size: contain;
+   content: "";
+   display: inline-block;
+    height: 80px;
+    width: 80px;
+    box-shadow: 0px 0px 50px rgb(22, 47, 234);
+    border-radius: 100px;
+    transform: translateY(25px)
+}   

@@ -1,0 +1,64 @@
+.box{
+   
+    
+    display: inline-block;
+}
+
+.g{ 
+    float: right;
+   
+    
+}
+
+.board{
+ 
+ background:rgb(15, 193, 77);
+ display:inline-block;
+ padding: 10PX;
+ 
+
+}
+
+.black{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(23, 23, 22);
+   display: inline-block;
+  
+}
+
+.white{
+    height: 100px;
+    width: 100px;
+    background-color: azure;
+    display: inline-block;
+    
+}
+
+ img{
+    height: 100px;
+    width: 100px;
+    object-fit:fill;
+    object-position: center;
+    
+   
+}
+.bx{
+   color: rgb(236, 244, 238);
+   font-size: 30px;
+    border: 2px solid red;
+    background-image: url(images/abstract-flowing-neon-wave-background_53876-101942.webp),url(images/panoramic-autumn-landscape-wooden-path-fall-nature-backgro-sunset-background-97979511.jpg);
+   
+   background-attachment:fixed;
+   background-position: right;
+   background-repeat: no-repeat;
+ 
+   background-blend-mode: lighten ;
+   object-fit:fill;
+   object-position:center;
+   display: inline-block;
+}
+.g2{
+    display: inline-block;
+}
+ 

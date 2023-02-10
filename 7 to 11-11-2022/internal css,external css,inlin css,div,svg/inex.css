@@ -1,0 +1,99 @@
+
+.main{
+   
+    box-sizing: border-box;
+    height: 900px;
+    width:800px;
+    background-color: rgb(221, 229, 147);
+    margin-left: 400px;
+    margin-top: 30px;
+    margin-bottom: 50PX;
+    padding: 30px;
+    display: inline-block;
+    border-radius: 300px 10px;
+
+}
+
+@font-face {
+    font-family: "my font";
+    src: url(RubikBubbles-Regular.ttf);
+}
+   
+.box{
+    box-sizing: border-box;
+    height: 200px;
+    width:200px;
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 30px;
+    display: inline-block;
+}
+.box2{
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+   padding: 10px;
+   margin: 15px;
+   display: inline-block;
+}
+
+.box3{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(8, 10, 10);
+    margin:15px;
+    display: inline-block;
+
+
+}
+.box4{
+    box-sizing: border-box;
+    background-color: aliceblue;
+    height: 200px;
+    width:200px;
+    padding: 30px;
+    margin: 20px;
+    display: inline-block;
+    border: 5px dashed black ;
+    border-radius: 100px 10px 100px 10px ;
+}
+
+
+.box5{
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    border: 5px dashed black ;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50px 10px 50px 10px ;
+   
+  
+}
+
+.box6{
+    height: 50px;
+    width: 50px;
+    margin:20px;
+    display: inline-block;
+    border: 5px dashed black ;
+    box-sizing: border-box;
+    border-radius: 10px ;
+    
+}
+
+.k{
+    color: aliceblue;
+    text-align: center;
+    border: 5px soli red;
+    height: 200px;
+    width: 200px;
+    margin:15px;
+    display: inline-block;
+    border: 5px dashed black ;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 50px;
+  
+}

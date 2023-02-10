@@ -1,0 +1,17 @@
+.p1{
+    height: 600px;
+    width: 500px;
+    background-color: aqua;
+    border: 1px solid;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+
+.c1{
+    height: 100px;
+    min-width: 100px;
+    background-color: rgb(213, 171, 171);
+    border: 2px solid black;
+}
