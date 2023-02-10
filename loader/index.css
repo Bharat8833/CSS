@@ -1,0 +1,98 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+.image{
+    border-radius: 50px;
+    height: 500px;
+    width: 800px;
+    position: relative;
+    
+}
+
+.loder{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(12.9px);
+}
+
+.w{
+    color: rgb(41, 115, 177);
+    position: absolute;
+    margin-left: 161px;
+    font-size: 16px;
+}
+
+.wait{
+    margin-left: 10px;
+    color: rgb(41, 115, 177);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 5px solid rgb(20, 20, 58);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    padding: 9px 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    animation-name: rotet;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+} 
+
+@keyframes rotet{
+    20%{
+         transform: rotate(90deg);
+         border-top: 5px dotted  rgb(20, 20, 58);
+         border-bottom: 5px dotted  rgb(20, 20, 58);
+         border-left: 5px solid transparent;
+         border-right: 5px solid transparent;
+    }
+
+    40%{
+        transform: rotate(180deg);
+    }
+
+    80%{
+        transform: rotate(240deg);
+        border-top: 5px dotted  rgb(0, 0, 255);
+        border-bottom: 5px dotted  rgb(0, 0, 255);
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
+    100%{
+        transform: rotate(360deg);
+       
+    }
+}
+
