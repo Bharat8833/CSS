@@ -1,0 +1,310 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(images/bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    
+}
+
+.main{
+    height: 200px;
+    background-color: rgb(27, 26, 26);
+    
+    
+}
+
+.menu>img{
+    margin-top: 20px;
+    margin-left: 50px;
+    
+    padding-right: 200px;
+}
+
+.main2{
+      height: 60px;
+      width: 100%;
+      background-color: rgb(15, 15, 15);
+      text-align: center;
+      font-size: x-large;
+      display: block;
+      padding:15px;
+      box-sizing: border-box;
+      color: rgb(207, 215, 226);
+      position: relative;
+}
+
+.main2>img{
+    position: absolute;
+    margin-left: 350px;
+}
+
+.menu{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(124, 121, 121);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+    
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.men-container{
+    width: 160px;
+    margin-top: 30px;
+    padding: 50px 0;
+   
+}
+
+.men-container>a{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.men-drop-content{
+    
+    display: none;
+    background-color: rgb(191, 222, 230);
+    box-shadow: 0 0 10px black ;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 220PX;
+    margin-left: -80px;
+    margin-top: 20px;
+    
+}
+
+.men-container:hover .men-drop-content{
+    display: block;
+  
+    
+}
+
+.women-container{
+    width: 180px;
+    margin-top: 30px;
+    padding: 50px 0;
+    
+}
+
+.women-container>a{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.women-drop-content{
+    display: none;
+    background-color: rgb(191, 222, 230);
+    box-shadow: 0 0 10px black ;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 220PX;
+    margin-left: -60px;
+    margin-top: 20px;
+
+}
+
+.women-container:hover .women-drop-content{
+    display: block;
+}
+
+.sub-drop{
+    display: block;
+    margin-bottom: 5px;
+    height: 30PX;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+   
+}
+
+.sub-drop:hover{
+    box-shadow: 0 0 5px rgb(5, 5, 5);
+    border-radius: 10px;
+}
+
+.sub-drop-box{
+    display: none;
+    background-color: rgb(51, 104, 119);
+    box-shadow: 0 0 10px black ;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 200PX;
+    margin-left:100px;
+}
+
+.sub-drop:hover .sub-drop-box{
+    display: block;
+}
+
+.kid-container{
+    width: 150px;
+    margin-top: 30px;
+    padding: 50px 0;
+}
+
+.kid-container>a{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.kid-drop-content{
+    
+    display: none;
+    background-color: rgb(191, 222, 230);
+    box-shadow: 0 0 10px black ;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 220PX;
+    margin-top: 20px;
+}
+
+.kid-container:hover .kid-drop-content{
+    display: block;
+}
+
+.strip-container{
+    width: 180px;
+    margin-top: 30px;
+    
+}
+
+.strip-container>a{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.strip-drop-content{
+    
+    display: none;
+    background-color: rgb(191, 222, 230);
+    box-shadow: 0 0 10px black ;
+    border-radius: 10px;
+    padding: 20px 10PX 10PX 10PX;
+    box-sizing: border-box;
+    position: absolute;
+    width: 1280PX;
+    height: 520px;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+    font-size: 20px;
+
+}
+
+.strip-container:hover .strip-drop-content{
+    display: flex;
+}
+
+.detail{
+      width: 240px;
+      margin: 10px;
+}
+
+.detail>img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(71, 69, 69) ;
+    margin: 10px;
+}
+
+.heding{
+    
+    border-bottom: 5px dashed rgb(70, 14, 14);
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(20, 17, 17);
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgb(150, 44, 44);
+}
+
+span{
+    display: block;
+    margin-bottom: 5px;
+    height: 30PX;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+span:hover{
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    cursor: pointer;
+
+}
+
+.search{
+   margin: 40px;
+   font-size: large;
+}
+
+.search>input{
+    border: none;
+    background-color: rgb(163, 163, 163);
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+    
+.fa-magnifying-glass{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main3{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(68, 95, 105);
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    color: rgb(217, 219, 219);
+    display: block;
+}
+
+.main3>a{
+    
+    color: rgb(215, 223, 223);
+}
