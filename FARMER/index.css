@@ -322,8 +322,8 @@ header{
 
 .about-icon{
     background-image: linear-gradient(#34AD54,#FF9933);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   color: transparent;
     
 }
 
