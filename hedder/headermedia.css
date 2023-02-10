@@ -1,0 +1,43 @@
+@media (max-width:600px){
+    .menu{
+        display: none;
+    }
+
+    .icon{
+        display: block;
+       
+    }
+    
+    .icon:hover .menu{
+        display: block;
+        width: 300px;
+        background-color: rgb(48, 57, 65);
+        position: absolute;
+        margin: auto;
+        top: 60px;
+        left: 0;
+    }
+
+    .icon:hover .link{
+        display: block;
+    }
+
+    .icon:hover{
+        cursor: pointer;
+        position: relative;
+        
+    }
+}
+
+@media (min-width:601px) and (max-width:2000px){
+    .icon{
+        display: block;
+        height: auto;
+        width: auto;
+        background-color: rgb(5, 6, 6);
+    }
+    .icon i{
+        display: none;
+    }
+}
+
