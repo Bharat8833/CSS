@@ -465,6 +465,10 @@ header{
     position: relative;
 }
 
+.w1200{
+    width: 1200px;
+}
+
 .team-icon{
     width: 70px;
     height: 460px;
@@ -557,9 +561,93 @@ header{
     position: fixed;
     right: 30px;
     bottom: 30px;
-    background-color: #34AD54;
+    background-color: #41cd48;
     padding: 15px;
     border-radius: 100%;
     color: #FF9933;
     font-size: 22px;
 }
+
+
+
+/* slider  */
+
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+  }
+
+  .swiper {
+    width: 1100px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  
+  }
+
+
+
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(212, 51, 51);
+   
+    
+
+  }
+
+  
+
+  .swiper-button-next{
+    color: #cd1414;
+    
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active{
+    height: 20px;
+    width: 20px;
+    color: #e3e3e3;
+    background: #77c680;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    color: #e3e3e3;
+    background: #f9f9f9;
+  }
+
+ .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #d6c7c7f5;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.947);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #ea2626;
+    background: #0c73e1;
+    width: 50px;
+    height: 50px;
+  }
+
+
+
+
+/* slider end  */
