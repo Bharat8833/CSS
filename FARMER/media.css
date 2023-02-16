@@ -142,6 +142,10 @@
     left: 120px;
     z-index: 4;
 }
+
+.client > .swiper{
+    width: 100%;
+}
 }     
 
 

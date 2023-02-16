@@ -268,11 +268,9 @@
             <p class="c-green fb">PRODUCTS</p>
             <p class="c-lblack fs48 ta m-fs">Our Fresh & Organic<br> Products</p>
             <div class="main prl ov xs-12 w1296 sm">
-               
-                
-                    <div class="swiper mySwiper flex jcc ov w1296 ">
-                        <div class="swiper-wrapper flex jsb ">
-                                <div class="swiper-slide">
+                <div class="swiper mySwiper xs sm flex jcc ov w1296 ">
+                        <div class="swiper-wrapper xs sm flex jsb ">
+                                <div class="swiper-slide sm xs">
                                     <div class="bg-white ta pad xs-12 sm-12">
                                         <img src="images/product-1.png" height="200px" width="220px">
                                         <p class="c-lblack fs18 mt20">Organic Vegitables</p>
@@ -335,11 +333,8 @@
                         </div>
                         <div class="swiper-button-next" style="color: rgb(85, 194, 83); font-weight: bold;"></div>
                         <div class="swiper-button-prev" style="color: rgb(85, 194, 83); font-weight: bold;"></div>
-                    </div> 
+                </div> 
                     <div class="swiper-pagination" style="position: relative;"></div>
-                
-                
-               
             </div>
         </div>
             <div class="product xs-dn sm">
@@ -349,9 +344,11 @@
         </div>
     </section>
 
-    <section class="flex jcc xs sm">
-        <div class="client  flex jcc aic xs sm">
-             <div class="clientintro flex jcc fdc aic prl rel xs sm">
+    <section class="flex jcc xs sm ">
+       <div class="flex jcc xs sm main client">
+        <div class=" flex jcc aic xs sm swiper mySwiper2">
+            <div class="swiper-wrapper xs sm">
+             <div class="clientintro  prl xs sm swiper-slide">
                 <div class="clientimg" >
                     <img class="xs " src="images/testimonial-2.jpg" height="120px" width="120px">
                 </div>
@@ -362,10 +359,51 @@
                   <p class="fs32 c-white mt20 m-fs" style="border-top: 0.5px solid rgb(206, 206, 206); padding: 10px;">
                     Client Name
                   </p>
-                  <a class="tn bg-white arrow2 xs-dn" href="#"><i class="fa-solid fa-arrow-left c-green"></i></a>
-                  <a class="tn bg-white arrow3 xs-dn" href="#"><i class="fa-solid fa-arrow-right c-green"></i></a>
+                 
              </div>
+
+             <div class="clientintro flex jcc fdc aic prl xs sm swiper-slide">
+                <div class="clientimg" >
+                    <img class="xs " src="images/testimonial-2.jpg" height="120px" width="120px">
+                </div>
+                <p class="ta fs24 ffm2 c-white lh mt20 w650 xs-12 m-fs" >
+                    Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero
+                    Labore justo vero ipsum sit clita eratLabore justo vero ipsum sit clita erat
+                  </p>
+                  <p class="fs32 c-white mt20 m-fs" style="border-top: 0.5px solid rgb(206, 206, 206); padding: 10px;">
+                    Client Name
+                  </p>
+                 
+             </div>
+             <div class="clientintro flex jcc fdc aic prl rel xs sm swiper-slide">
+                <div class="clientimg" >
+                    <img class="xs " src="images/testimonial-2.jpg" height="120px" width="120px">
+                </div>
+                <p class="ta fs24 ffm2 c-white lh mt20 w650 xs-12 m-fs" >
+                    Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero
+                    Labore justo vero ipsum sit clita eratLabore justo vero ipsum sit clita erat
+                  </p>
+                  <p class="fs32 c-white mt20 m-fs" style="border-top: 0.5px solid rgb(206, 206, 206); padding: 10px;">
+                    Client Name
+                  </p>
+                 
+             </div>
+             <div class="clientintro flex jcc fdc aic prl rel xs sm swiper-slide">
+                <div class="clientimg" >
+                    <img class="xs " src="images/testimonial-2.jpg" height="120px" width="120px">
+                </div>
+                <p class="ta fs24 ffm2 c-white lh mt20 w650 xs-12 m-fs" >
+                    Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero
+                    Labore justo vero ipsum sit clita eratLabore justo vero ipsum sit clita erat
+                  </p>
+                  <p class="fs32 c-white mt20 m-fs" style="border-top: 0.5px solid rgb(206, 206, 206); padding: 10px;">
+                    Client Name
+                  </p>
+                 
+             </div>
+            </div> 
         </div>
+       </div> 
     </section>
 
     <section class="flex jcc xs sm">
@@ -583,6 +621,18 @@
     
     // });
 
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 1,
+      slidesToShow: 1,
+      grabCursor: true,
+      loop:true,
+      spaceBetween: 30,
+    //   autoplay: true,
+    //   autoplayspeed: 1000,
+      centerMode: true,
+      centerPadding: '60px'
+    });
+
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       slidesToShow: 3,
@@ -593,80 +643,32 @@
       autoplayspeed: 1000,
       centerMode: true,
       centerPadding: '60px',
+ 
+
+    
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
         renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (index + 1) + "</span>";
         },
+
+    },
+  
     
-      
-      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-    });
 
-    var appendNumber = 4;
-    var prependNumber = 1;
-
-    document
-      .querySelector(".append-slide")
-      .addEventListener("scroll", function (e) {
-        e.preventDefault();
-        swiper.appendSlide(
-        1 + ++appendNumber + 1
-        );
-      });
-
-    
- 
    
-  </script>
+
+                  
+    
+    });
+   
+    </script>
    
 </body>
 </html>
 
-
-<!-- 
-<div class="bg-white ta pad xs-12 sm-12">
-    <img src="images/product-1.png" height="200px" width="220px">
-    <p class="c-lblack fs18 mt20">Organic Vegitables</p>
-    <p class="c-green fs24 fb mt20">$19.00</p>
-</div>
-<div class="bg-white pad ta ml">
-    <img src="images/product-2.png" height="200px" width="220px">
-    <p class="c-lblack fs18 mt20">Organic Vegitables</p>
-    <p class="c-green fs24 fb mt20">$19.00</p>
-</div>
-<div class="bg-white pad ta ml">
-    <img src="images/product-1.png" height="200px" width="220px">
-    <p class="c-lblack fs18 mt20">Organic Vegitables</p>
-    <p class="c-green fs24 fb mt20">$19.00</p>
-</div>
-<div class="bg-white pad ta ml">
-    <img src="images/product-2.png" height="200px" width="220px">
-    <p class="c-lblack fs18 mt20">Organic Vegitables</p>
-    <p class="c-green fs24 fb mt20">$19.00</p>
-</div>
-<div class="bg-white pad ta ml">
-    <img src="images/product-1.png" height="200px" width="220px">
-    <p class="c-lblack fs18 mt20">Organic Vegitables</p>
-    <p class="c-green fs24 fb mt20">$19.00</p>
-</div>
-<div class="bg-white pad ta ml">
-    <img src="images/product-2.png" height="200px" width="220px">
-    <p class="c-lblack fs18 mt20">Organic Vegitables</p>
-    <p class="c-green fs24 fb mt20">$19.00</p>
-</div>
-<div class="bg-white pad ta ml">
-    <img src="images/product-1.png" height="200px" width="220px">
-    <p class="c-lblack fs18 mt20">Organic Vegitables</p>
-    <p class="c-green fs24 fb mt20">$19.00</p>
-</div>
-<div class="bg-white pad ta ml">
-    <img src="images/product-2.png" height="200px" width="220px">
-    <p class="c-lblack fs18 mt20">Organic Vegitables</p>
-    <p class="c-green fs24 fb mt20">$19.00</p>
-</div> -->
