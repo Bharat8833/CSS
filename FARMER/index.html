@@ -53,8 +53,8 @@
     <section class="flex jcc xs sm">
         <div class="w1720 rel flex aic jcc xs-12 sm-12 mh "  >
             <img class="bgimage " src="images/carousel-2.jpg" width="1820px" height="800px">
-            <div class="abs flex fdc headline xs-12-2 sm-12-2">
-                <p class="fs28 c-green ">
+            <div class="abs flex fdc headline xs-12-2  sm-12-2">
+                <p class="fs28 c-green m-fs">
                     Organic Vegetables
                 </p>
                 <p class="fs80 c-white fb m-fs">
@@ -143,7 +143,7 @@
                     </div>
                     <p class="fs18 c-white">
                         Our Experience<br>
-                        <span class="fs48 c-white">12345</span>
+                        <span class="fs48 counter c-white">12345</span>
                     </p>
                 </div>
                 <div class="flex aic prl xs-12 sm-4">
@@ -152,7 +152,7 @@
                     </div>
                     <p class="fs18 c-white">
                         Our Experience<br>
-                        <span class="fs48 c-white">12345</span>
+                        <span class="fs48 counter c-white">12345</span>
                     </p>
                 </div>
                 <div class="flex aic prl xs-12 sm-4">
@@ -161,7 +161,7 @@
                     </div>
                     <p class="fs18 c-white">
                         Our Experience<br>
-                        <span class="fs48 c-white">12345</span>
+                        <span  class="fs48 counter  c-white">12345</span>
                     </p>
                 </div>
           </div>
@@ -346,7 +346,7 @@
 
     <section class="flex jcc xs sm ">
        <div class="flex jcc xs sm main client">
-        <div class=" flex jcc aic xs sm swiper mySwiper2">
+        <div class=" flex jcc aic xs sm swiper mySwiper2 ">
             <div class="swiper-wrapper xs sm">
              <div class="clientintro  prl xs sm swiper-slide">
                 <div class="clientimg" >
@@ -364,7 +364,7 @@
 
              <div class="clientintro flex jcc fdc aic prl xs sm swiper-slide">
                 <div class="clientimg" >
-                    <img class="xs " src="images/testimonial-2.jpg" height="120px" width="120px">
+                    <img class="xs " src="images/testimonial-1.jpg" height="120px" width="120px">
                 </div>
                 <p class="ta fs24 ffm2 c-white lh mt20 w650 xs-12 m-fs" >
                     Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero
@@ -390,7 +390,7 @@
              </div>
              <div class="clientintro flex jcc fdc aic prl rel xs sm swiper-slide">
                 <div class="clientimg" >
-                    <img class="xs " src="images/testimonial-2.jpg" height="120px" width="120px">
+                    <img class="xs " src="images/testimonial-1.jpg" height="120px" width="120px">
                 </div>
                 <p class="ta fs24 ffm2 c-white lh mt20 w650 xs-12 m-fs" >
                     Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero
@@ -402,7 +402,11 @@
                  
              </div>
             </div> 
+                      <div class="swiper-button-next" style="color: rgb(255, 123, 0); font-weight: bold;"></div>
+                      <div class="swiper-button-prev" style="color: rgb(255, 123, 0); font-weight: bold;"></div>
         </div>
+        
+
        </div> 
     </section>
 
@@ -567,6 +571,8 @@
     <div
     
          class="backtotop" onclick="gettop()"><i class="fa-solid fa-arrow-up"></i></div>
+
+
     
     
 
@@ -583,7 +589,9 @@
 
         $('.dropdown').click(function(){
             $('.drop').toggle();
+         
         });
+        
         $(window).scroll(function(){
             // alert('hiuihhki');
             if($(this).scrollTop() > 100){
@@ -594,15 +602,25 @@
                 $('.backtotop').hide();
             };
             if($(this).scrollTop() > 100){
-                 $('header ').addClass('sticky2');
+                 $('header').addClass('sticky2');
             }else{
-                $('header ').removeClass('sticky2');
+                $('header').removeClass('sticky2');
             };
+
+            $('.counter').counterUp({
+                 delay: 10,
+                 time: 1000,
+                 offset: 7,
+                 beginAt: 10000,
+  
+              });
+        
         });
 
         function gettop(){
             document.documentElement.scrollTop=0;
-        }
+        };
+
 
 
     </script>
@@ -627,10 +645,14 @@
       grabCursor: true,
       loop:true,
       spaceBetween: 30,
-    //   autoplay: true,
-    //   autoplayspeed: 1000,
+      autoplay: true,
+      autoplayspeed: 1000,
       centerMode: true,
-      centerPadding: '60px'
+      centerPadding: '60px',
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
 
     var swiper = new Swiper(".mySwiper", {
@@ -643,9 +665,6 @@
       autoplayspeed: 1000,
       centerMode: true,
       centerPadding: '60px',
- 
-
-    
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

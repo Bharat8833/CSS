@@ -24,7 +24,7 @@
     }
 
     .m-fs{
-        font-size: 3em;
+        font-size: 1em;
     }
 
     .xs-dn{
@@ -59,12 +59,15 @@
         display: inline-block;
         margin: auto;
         font-size: 16px;
+        margin-top: 50px;
+        font-size: 24px;
     }
 
     .xs-6{
-        width: 50%;
+        width: 45%;
         display: inline-block;
         font-size: 16px;
+        margin: 0;
     }
 
     .xs-3{
@@ -77,6 +80,8 @@
         display: block;
         position: absolute;
         right: 20px;
+        background-color: white;
+      
     }
 
   
@@ -129,7 +134,7 @@
    .sticky2{
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 5;
    }
    .drop{
     background-color:#34AD54;
@@ -145,7 +150,14 @@
 
 .client > .swiper{
     width: 100%;
+    font-size: 18px;
+    height: fit-content;
 }
+.swiper {
+    width: 400px;
+    height: 315px;
+}
+ 
 }     
 
 
