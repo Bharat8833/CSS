@@ -275,6 +275,7 @@
     height: auto;
     width: 50%;
     top: 60px;
+    right: 0;
     z-index: 2;
 
    }
